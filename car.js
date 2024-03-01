@@ -108,7 +108,7 @@ class Car {
         this.y -=Math.cos(this.angle)*this.speed;
     }
 
-    draw(ctx){
+    draw(ctx,color){
         // ctx.save();
         // ctx.translate(this.x,this.y);
         // ctx.rotate(-this.angle);
@@ -127,7 +127,7 @@ class Car {
         if(this.damaged){
             ctx.fillStyle = "red";
         }else{
-            ctx.fillStyle = "black";
+            ctx.fillStyle = color;
         }
 
         ctx.beginPath();
